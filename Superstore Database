@@ -35,7 +35,7 @@ ORDER BY price desc;
 SELECT item_name, AVG (price)
 FROM superstore;
 
-#Show a statistic about the price for items in the category of "Kitchen Supplies". 
+#Show a statistic about the price for items in the category of "Furnishings". 
 SELECT avg(price)
 FROM superstore
-WHERE category="Kitchen Supplies"
+WHERE category="Furnishings";
