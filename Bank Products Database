@@ -29,7 +29,7 @@ VALUES
 SELECT *
 FROM bank_products;
 
-#SELECT statement filtering only "Savings" and "Checking" products.
+#SELECT statement showing "Savings" and "Checking" products only.
 SELECT product_name,product_type
 FROM bank_products
 WHERE product_type="Savings"
