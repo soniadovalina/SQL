@@ -25,18 +25,18 @@ VALUES
     (14, 'Rewards Credit Card', 'Credit Card', 21.99, 0.00, 0.00),
     (15, 'Auto Loan', 'Loan', 4.25, 0.00, 20000.00);
 
-SELECT statement showing all the available products
+#SELECT statement showing all the available products.
 SELECT *
 FROM bank_products;
 
-SELECT statement filtering only "Savings" and "Checking" products
+#SELECT statement filtering only "Savings" and "Checking" products.
 SELECT product_name,product_type
 FROM bank_products
 WHERE product_type="Savings"
 OR product_type="Checking"
 ORDER BY product_type;
 
-QUERY "Savings" Account types with an interest above .75 with no monthly fees.
+#QUERY "Savings" Account types with an interest above .75 with no monthly fees.
 SELECT product_name,interest_rate,monthly_fee
 FROM bank_products
 WHERE product_type="Savings"
